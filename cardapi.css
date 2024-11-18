@@ -1,0 +1,127 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 0 20px;
+
+  top: 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 10px;
+  gap: 15px;
+  height: 100%;
+}
+
+.menu  li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: large;
+ 
+  
+}
+.menu  li a:hover{
+  color:black;
+  transition: color 0.3s ease-in-out;
+  background-color: #f2f2f2;
+   border-radius: 20px;
+   font-size: larger;
+}
+.search input{
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.search input:focus{
+ border-radius: 15px;
+  outline: none;
+}
+
+.search button{
+  padding: 10px 20px;
+  background-color: #65376b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.data {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  width: 80%;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+img:hover {
+  transform: scale(1.1);
+}
+.like {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.likecount {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.bio {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #74512d;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+}
+
+.data:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  transform: scale(1.01);
+}
